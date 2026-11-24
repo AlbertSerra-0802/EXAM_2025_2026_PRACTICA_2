@@ -1,0 +1,51 @@
+body {
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+
+.text-orange {
+  color: #e64a19;
+}
+
+.bg-orange {
+  background-color: #e64a19;
+}
+
+
+.btn-orange {
+  background-color:#e64a19;
+  border:none;
+}
+
+
+.card-body .form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
+}
+
+
+.card-body .form-control:focus {
+  box-shadow: none;
+  border-color: #e64a19;
+}
+
+
+.project-img {
+  width: 130px;
+  height: 75px;
+  object-fit: cover;
+  background-color: #000;
+}
+
+
+span.badge.custom-badge {
+  background-color: transparent;
+  color: #444444;
+  border: 1px solid #cccccc;
+  font-size: 10px;
+  font-weight: normal;
+  padding: 4px 8px;
+  margin-right: 4px;
+  border-radius: 0;
+}

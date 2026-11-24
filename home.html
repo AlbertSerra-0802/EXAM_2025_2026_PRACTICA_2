@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  
+  <!-- 1. Cargar CSS de Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- 2. Cargar tu archivo CSS local -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!-- 1. HEADER (Usa clases Flex y de bordes de Bootstrap) -->
+<header class="d-flex justify-content-between align-items-center px-4 py-3 border-bottom">
+  <div class="fw-bold tracking-wide">
+    <span class="text-orange">■</span> SPACEX
+  </div>
+  <nav>
+    <a href="home.html" class="btn btn-outline-light btn-sm me-2 active">01 HOME</a>
+    <a href="portfolio.html" class="btn btn-link text-secondary text-decoration-none btn-sm me-2">02 PORTFOLIO</a>
+    <a href="contact.html" class="btn btn-link text-secondary text-decoration-none btn-sm">03 CONTACTO</a>
+  </nav>
+</header>
+
+<!-- 2. BARRA DE TELEMETRÍA (Usa clases de fondo oscuro y tipografía) -->
+<div class="bg-dark text-secondary d-flex justify-content-between px-4 py-2 small">
+  <span class="text-light">T- 00:42:17</span>
+  <span class="text-light">STAGE 1 - NOMINAL</span>
+  <span class="text-light">PAD 39A</span>
+  <span class="text-light">28.5° N / 80.6° W</span>
+  <span class="text-orange">■ GO FOR LAUNCH</span>
+</div>
+
+<!-- CONTENIDOR PRINCIPAL DE BOOTSTRAP -->
+<main class="container my-5">
+
+  <!-- 3. SECCIÓN HERO (Fila con 2 columnas: 8/12 y 4/12) -->
+  <section class="row g-4 mb-5 align-items-start">
+    <div class="col-md-8">
+      <span class="text-success small fw-bold">■ MISSION CRS-31  FALCON 9 . BLOCK 5</span>
+      <h1 class="display-3 fw-bold my-2">
+        DESTINATION<br>
+        <span class="text-orange">MARS</span>
+      </h1>
+      <p class="text-secondary small col-md-10">
+        SpaceX diseña, fabrica y lanza cohetes reutilizables para reducir el coste del acceso al espacio y hacer la vida multiplanetaria[cite: 1].
+      </p>
+      <div class="bg-orange mt-4" style="height: 3px; width: 85%;"></div>
+    </div>
+
+    <!-- TARJETA MANIFEST CON COMPONENTES BOOTSTRAP -->
+    <div class="col-md-4">
+      <div class="card border rounded-0">
+        <div class="card-header bg-dark text-white rounded-0 d-flex justify-content-between small py-2">
+          <span>MISSION MANIFEST</span>
+          <span>REV 2.0</span>
+        </div>
+        <ul class="list-group list-group-flush small">
+          <li class="list-group-item d-flex justify-content-between py-2"><span>FUNDADA</span> <strong>2002</strong></li>
+          <li class="list-group-item d-flex justify-content-between py-2"><span>LANZAMIENTOS</span> <strong>450+</strong></li>
+          <li class="list-group-item d-flex justify-content-between py-2"><span>ATERRIZAJES</span> <strong>400+</strong></li>
+          <li class="list-group-item d-flex justify-content-between py-2"><span>TRIPULACIÓN ISS</span> <strong>50+</strong></li>
+          <li class="list-group-item d-flex justify-content-between py-2"><span>STARLINK</span> <strong>6.000+ sat</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECCIÓN BRIEFING (Fila con 2 columnas iguales: 6/12 y 6/12) -->
+  <section class="row g-5">
+    <div class="col-md-6">
+      <span class="text-muted small">-- BRIEFING 01</span>
+      <h2 class="h3 fw-bold my-3">EL PROGRAMA DE VUELO</h2>
+      <p class="text-secondary small">
+        Fundada en 2002, SpaceX revolucionó la industria aeroespacial al desarrollar el primer cohete orbital de clase reutilizable, el Falcon 9, capaz de aterrizar y volver a volar[cite: 1].
+      </p>
+      <p class="text-secondary small">
+        La nave Starship, totalmente reutilizable, está diseñada para transportar tripulación y carga a la Luna, a Marte y más allá, reduciendo drásticamente el coste por misión[cite: 1].
+      </p>
+      <p class="text-secondary small">
+        En paralelo, la constelación Starlink ofrece conexión a internet de alta velocidad desde la órbita terrestre baja a cualquier punto del planeta[cite: 1].
+      </p>
+    </div>
+
+    <div class="col-md-6">
+      <div class="border bg-black">
+        <img src="asv_imatges/p1-falcon9.png" class="img-fluid w-100" alt="Falcon 9 Rocket">
+        <div class="bg-white p-2 d-flex justify-content-between small text-muted border-top">
+          <span>FIG. 01 -- FALCON 9 -- MARS</span>
+          <span>SCALE 1:140</span>
+        </div>
+      </div>
+
+      <!-- MÉTRICAS EN 3 COLUMNAS DE BOOTSTRAP -->
+      <div class="row text-start mt-4 pt-3 border-top g-2">
+        <div class="col-4">
+          <span class="text-muted small d-block">EMPUJE</span>
+          <span class="fs-5 fw-bold">7.6 <small class="text-orange fs-6">MN</small></span>
+        </div>
+        <div class="col-4">
+          <span class="text-muted small d-block">CARGA A LEO</span>
+          <span class="fs-5 fw-bold">22.8 <small class="text-orange fs-6">t</small></span>
+        </div>
+        <div class="col-4">
+          <span class="text-muted small d-block">REUTILIZACIÓN</span>
+          <span class="fs-5 fw-bold">20+ <small class="text-orange fs-6">vuelos</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 5. FOOTER DE BOOTSTRAP -->
+<footer class="d-flex justify-content-between px-4 py-3 border-top text-muted small">
+  <span>SPACEX - FLIGHT MANIFEST</span>
+  <span>© 2026 - ALL SYSTEMS NOMINAL</span>
+</footer>
